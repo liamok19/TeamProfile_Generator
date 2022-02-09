@@ -12,4 +12,25 @@ describe('managerResult', () => {
             expect(manager.officeNumber).toBe('6123');
         });
     });
+    describe('nameCheck', () =>{
+        it('should call the getname() value from manager.js', () => {
+    
+            expect(manager.getname()).toBe('Jess');
+        })
+    })
+    describe('IDCheck', () =>{
+        it('should call the getid() value from manager.js', () =>{
+            expect(manager.getid()).toBe('5678');
+        })
+    })
+    describe('EmailCheck', () =>{
+        it('should call the getemail() value from manager.js', () =>{
+            expect(manager.getemail()).toBe('jess@mail.com');
+        })
+    })
+    describe('officeNumberCheck', () =>{
+        it('should call the getofficeNumber() value from manager.js', () =>{
+            expect(manager.getofficeNumber()).toBe('6123');
+        })
+    })
 });    

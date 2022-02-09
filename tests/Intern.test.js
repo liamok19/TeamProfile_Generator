@@ -12,4 +12,24 @@ describe('internResult', () => {
             expect(intern.school).toBe('hogwarts');
         });
     });
+    describe('nameCheck', () =>{
+        it('should call the getname() value from intern.js', () => {
+            expect(intern.getname()).toBe('Bobby');
+        })
+    })
+    describe('IDCheck', () =>{
+        it('should call the getid() value from intern.js', () =>{
+            expect(intern.getid()).toBe('7778');
+        })
+    })
+    describe('EmailCheck', () =>{
+        it('should call the getemail() value from intern.js', () =>{
+            expect(intern.getemail()).toBe('boby@mail.com');
+        })
+    })
+    describe('schoolCheck', () =>{
+        it('should call the getofficeNumber() value from intern.js', () =>{
+            expect(intern.getschool()).toBe('hogwarts');
+        })
+    })
 });    
