@@ -1,5 +1,28 @@
 {
   "dependencies": {
     "inquirer": "^8.2.0"
-  }
+  },
+  "name": "teamprofile_generator",
+  "description": "[![License: MIT](https://img.shields.io/apm/l/vim-mode?color=orange&style=for-the-badge.svg)](https://opensource.org/licenses/MIT)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamok19/TeamProfile_Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamok19/TeamProfile_Generator/issues"
+  },
+  "homepage": "https://github.com/liamok19/TeamProfile_Generator#readme"
 }
