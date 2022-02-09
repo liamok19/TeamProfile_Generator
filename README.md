@@ -19,10 +19,11 @@ To build a Node.js command-line application that takes in information about empl
 ## Installation 
 | Steps | Instructions | 
 | ------------- |:-------------:| 
-| Installation Requirements | npm i  |
+| Installation Requirements | npm i inquirer - Completed |
+| Applying relevant files to gitignore | Completed
 | The applicaton should include Jest and Inquirer | Inprogress   |
-| Refer to directory structure below | Inprogress  |
-| CReate a prompt window for team members/information. This then updates the html | Not yet started |
+| Refer to directory structure below | Completed  |
+| Create a prompt window for team members/information. This then updates the html | Not yet started |
 | Apply mail:to to the email link. | Not yet started |
 | Click function to Github link, directing you to the github Page | Not yet started |
 | Prompt window requirs you to enter team managers name, employee ID, email address, and office number | Not yet started |
@@ -55,7 +56,7 @@ To build a Node.js command-line application that takes in information about empl
 This project is available under the MIT license. Visit [License: MIT](https://opensource.org/licenses/MIT) for full license text
 
 ## Contribute
-
+To contribute to Team Profile Generator, clone this repo locally and commit your code on a separate branch.
 
 ## Tests
 
