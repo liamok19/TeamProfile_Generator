@@ -32,6 +32,7 @@ To build a Node.js command-line application that takes in information about empl
 | Once completing the team build then i exit the application, and the HTML is generate | Not Yet started | 
 
 ## Directory Structure
+```md
 .
 ├── __tests__/             //jest tests
 │   ├── Employee.test.js
@@ -44,6 +45,7 @@ To build a Node.js command-line application that takes in information about empl
 ├── .gitignore             // indicates which folders and files Git should ignore
 ├── index.js               // runs the application
 └── package.json           
+```
 
 ## Final Look
 # Usage
