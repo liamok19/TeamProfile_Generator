@@ -23,7 +23,7 @@ To build a Node.js command-line application that takes in information about empl
 | Applying relevant files to gitignore | Completed
 | The applicaton should include Jest and Inquirer | Completed   |
 | Refer to directory structure below | Completed  |
-| Describe it tests required for the following, EMployee, Manager, Intern and Engineer | Completed |
+| Describe 'it' tests required for the following, Employee, Manager, Intern and Engineer | Completed |
 | Create a prompt window for team members/information. This then updates the html | Not yet started |
 | Apply mail:to to the email link. | Not yet started |
 | Click function to Github link, directing you to the github Page | Not yet started |

@@ -6,30 +6,30 @@ describe('internResult', () => {
     describe('Initialization', () => {
         it('We should receive the constructor values for the intern object', () => {
             //Assert
-            expect(intern.name).toBe('Bobby');
-            expect(intern.id).toBe('7778');
-            expect(intern.email).toBe('boby@mail.com');
-            expect(intern.school).toBe('hogwarts');
+            expect(intern.name).toEqual('Bobby');
+            expect(intern.id).toEqual('7778');
+            expect(intern.email).toEqual('boby@mail.com');
+            expect(intern.school).toEqual('hogwarts');
         });
     });
     describe('nameCheck', () =>{
         it('should call the getname() value from intern.js', () => {
-            expect(intern.getname()).toBe('Bobby');
+            expect(intern.getname()).toEqual('Bobby');
         })
     })
     describe('IDCheck', () =>{
         it('should call the getid() value from intern.js', () =>{
-            expect(intern.getid()).toBe('7778');
+            expect(intern.getid()).toEqual('7778');
         })
     })
     describe('EmailCheck', () =>{
         it('should call the getemail() value from intern.js', () =>{
-            expect(intern.getemail()).toBe('boby@mail.com');
+            expect(intern.getemail()).toEqual('boby@mail.com');
         })
     })
     describe('schoolCheck', () =>{
         it('should call the getofficeNumber() value from intern.js', () =>{
-            expect(intern.getschool()).toBe('hogwarts');
+            expect(intern.getschool()).toEqual('hogwarts');
         })
     })
 });    
