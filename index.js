@@ -70,8 +70,28 @@ const promptManager = function () {
 
 const prompList = () => {
     return inquirer.prompt ([
+        {
+            type: 'list',
+            name: 'list',
+            message: '(Required) Select from the List below what employee you"d like to create or select finish Team Build',
+            choices: ['Include team member: Engineer', 'Include team member: Intern', 'Finished team build - select here'], 
+        }
+        .then (userChoice => {
+            switch (userChoice.list){
+                case 'Include team member: Engineer': 
+                promptEngineer();
+                break
+                case 'Include team member: Intern': 
+                promptIntern();
+                break
+                case 'Finished team build - select here';
+                finishedTeambuild();
+            } 
+        })
 
     ])
 }
+
+
 
 promptManager();
