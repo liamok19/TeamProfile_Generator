@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(155, 163, 170, 0.295);
+
+}
+.headerbar{
+    padding: 25px; 
+    margin: 5%;
+    color:  rgb(239, 241, 243);
+    background-color: rgb(226, 67, 67);
+    text-align: center;
+
+}
+.employeecontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.teamcard {
+    margin: 5px;
+}

@@ -1,4 +1,4 @@
-module.exports = data => {
+module.exports = results => {
 
 return `
 <!DOCTYPE html>
@@ -15,32 +15,32 @@ return `
     </header>
         <div class="card" style="width: 18rem;">
         <div class="card-header">
-    ${data.name} <br/>
+    ${results.name} <br/>
     <i class="fas fa-mug-hot"></i>Manager</div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data.id}</li>
-        <li class="list-group-item">Email: <span id="email"><a href="mailto:${data.email}">${data.email}</a></span></li>
-        <li class="list-group-item">Office Number: ${data.officeNumber}</li>
+        <li class="list-group-item">ID: ${results.id}</li>
+        <li class="list-group-item">Email: <span id="email"><a href="mailto:${results.email}">${results.email}</a></span></li>
+        <li class="list-group-item">Office Number: ${results.officeNumber}</li>
         </ul>
     </div>
         <div class="card" style="width: 18rem;">
         <div class="card-header">
-    ${data.name} <br/>
+    ${results.name} <br/>
     <i class="fas fa-glasses"></i>Engineer</div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data.id}</li>
-        <li class="list-group-item">Email: <span id="email"><a href="mailto:${data.email}">${data.email}</a></span></li>
-        <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${data.githubUsername}">${data.githubUsername}</a></li>
+        <li class="list-group-item">ID: ${results.id}</li>
+        <li class="list-group-item">Email: <span id="email"><a href="mailto:${results.email}">${results.email}</a></span></li>
+        <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${results.githubUsername}">${results.githubUsername}</a></li>
         </ul>
     </div>
         <div class="card" style="width: 18rem;">
         <div class="card-header">
-    ${data.name} <br/>
+    ${results.name} <br/>
     <i class="fas fa-user-graduate"></i>Intern</div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${data.id}</li>
-        <li class="list-group-item">Email: <span id="email"><a href="mailto:${data.email}">${data.email}</a></span></li>
-        <li class="list-group-item">School: ${data.school}</li>
+        <li class="list-group-item">ID: ${results.id}</li>
+        <li class="list-group-item">Email: <span id="email"><a href="mailto:${results.email}">${results.email}</a></span></li>
+        <li class="list-group-item">School: ${results.school}</li>
         </ul>
     </div>
 
