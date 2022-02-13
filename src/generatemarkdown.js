@@ -2,7 +2,86 @@
 // const engineer = require('./lib/Engineer.js');
 // const intern = require('./lib/Intern.js');
 
+const employee = require("../lib/Employee")
 
+const createManger = function (manager) {
+    return 
+    `       
+    <div class="teamcard" style="width: 18rem;">
+        <div class="card-header">   
+            ${results[0].name} <br/>
+            <i class="fas fa-mug-hot"></i>Manager
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: ${results[0].id}</li>
+            <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[0].email}">${results[0].email}</a></span></li>
+            <li class="list-group-item">Office Number: ${results[0].officeNumber}</li>
+        </ul>
+    </div>
+    `
+}
+const createEngineer = function (engineer) {
+    return 
+    `
+    <div class="teamcard" style="width: 18rem;">
+    <div class="card-header">
+        ${results[1].name} <br/>
+        <i class="fas fa-glasses"></i>Engineer
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">ID: ${results[1].id}</li>
+        <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[1].email}">${results[1].email}</a></span></li>
+        <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${results[1].githubUsername}">${results[1].githubUsername}</a></li>
+    </ul>
+    </div>
+    `
+}
+const createIntern = function (intern) {
+    return 
+    `
+    <div class="teamcard" style="width: 18rem;">
+    <div class="card-header">
+        ${results[2].name} <br/>
+        <i class="fas fa-user-graduate"></i>Intern
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">ID: ${results[2].id}</li>
+        <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[2].email}">${results[2].email}</a></span></li>
+        <li class="list-group-item">School: ${results[2].school}</li>
+    </ul>
+    </div>
+    `
+}
+
+//pushing above manager, engineer and intern results into the empty array
+generateHTML = (results) => {
+    //starting with an empyt container with an empty array
+    cardArray = [];
+
+    for (let i = 0; i < results.length; i++) {
+        const employee = result[i];
+        const role = employee.getRole() //retrieving information from the specified role, includin the role"s path
+    }
+
+    //calling Manager functions  one information retrieved we're pushing into the empty CardArray[]
+    if ( role === 'Manager') {
+        const managerResult = createManger(employee);
+
+        cardArray.push(managerResult);
+    }
+    //calling Enigineer functions one information retrieved we're pushing into the empty CardArray[]
+    if ( role === 'Engineer') {
+        const engineerResult = createEngineer(employee);
+
+        cardArray.push(engineerResult);
+    }
+    //calling Intern functions  one information retrieved we're pushing into the empty CardArray[]
+    if ( role === 'Intern') {
+        const internResult = createIntern(employee);
+
+        cardArray.push(internResult);
+    }
+}
 module.exports = results => {
 // console.log(results);
 
@@ -27,42 +106,42 @@ return `
     <header >
         <h1 class="headerbar"><strong> My Team <strong></h1>
     </header>
-    <div class="employeecontainer">
-        <div class="teamcard" style="width: 18rem;">
-            <div class="card-header">   
-                ${results[0].name} <br/>
-                <i class="fas fa-mug-hot"></i>Manager
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${results[0].id}</li>
-                <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[0].email}">${results[0].email}</a></span></li>
-                <li class="list-group-item">Office Number: ${results[0].officeNumber}</li>
-            </ul>
-        </div>
-        <br>
-        <div class="teamcard" style="width: 18rem;">
-            <div class="card-header">
-                ${results[1].name} <br/>
-                <i class="fas fa-glasses"></i>Engineer
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${results[1].id}</li>
-                <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[1].email}">${results[1].email}</a></span></li>
-                <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${results[1].githubUsername}">${results[1].githubUsername}</a></li>
-            </ul>
-        </div>
-        <br>
-        <div class="teamcard" style="width: 18rem;">
-            <div class="card-header">
-                ${results[2].name} <br/>
-                <i class="fas fa-user-graduate"></i>Intern
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${results[2].id}</li>
-                <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[2].email}">${results[2].email}</a></span></li>
-                <li class="list-group-item">School: ${results[2].school}</li>
-            </ul>
-        </div>
+    // <div class="employeecontainer">
+    //     <div class="teamcard" style="width: 18rem;">
+    //         <div class="card-header">   
+    //             ${results[0].name} <br/>
+    //             <i class="fas fa-mug-hot"></i>Manager
+    //         </div>
+    //         <ul class="list-group list-group-flush">
+    //             <li class="list-group-item">ID: ${results[0].id}</li>
+    //             <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[0].email}">${results[0].email}</a></span></li>
+    //             <li class="list-group-item">Office Number: ${results[0].officeNumber}</li>
+    //         </ul>
+    //     </div>
+        // <br>
+        // <div class="teamcard" style="width: 18rem;">
+        //     <div class="card-header">
+        //         ${results[1].name} <br/>
+        //         <i class="fas fa-glasses"></i>Engineer
+        //     </div>
+        //     <ul class="list-group list-group-flush">
+        //         <li class="list-group-item">ID: ${results[1].id}</li>
+        //         <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[1].email}">${results[1].email}</a></span></li>
+        //         <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${results[1].githubUsername}">${results[1].githubUsername}</a></li>
+        //     </ul>
+        // </div>
+        // <br>
+        // <div class="teamcard" style="width: 18rem;">
+        //     <div class="card-header">
+        //         ${results[2].name} <br/>
+        //         <i class="fas fa-user-graduate"></i>Intern
+        //     </div>
+        //     <ul class="list-group list-group-flush">
+        //         <li class="list-group-item">ID: ${results[2].id}</li>
+        //         <li class="list-group-item">Email: <span id="email"><a href="mailto:${results[2].email}">${results[2].email}</a></span></li>
+        //         <li class="list-group-item">School: ${results[2].school}</li>
+        //     </ul>
+        // </div>
     </div>
 </body>
 </html>
