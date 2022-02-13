@@ -219,19 +219,8 @@ const promptIntern = function () {
     })
 }
 
-//If the user selects the finish team build option listed they're prompted with the following
-// const finishedTeambuild = function () {
-//         // then((answerData) => {
-//         // generateMarkdown(answerData);
-//     fs.writeFile('index.html', generateMarkdown(answerData));
-
-//     // });
-// };
-
-// finishedTeambuild();
-
 const finishedTeambuild = () => {
-    fs.writeFileSync('index.html', generateMarkdown(groupMembers), "utf-8");
+    fs.writeFileSync('./dist/index.html', generateMarkdown(groupMembers), "utf-8");
 }
 
 
