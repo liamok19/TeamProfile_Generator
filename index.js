@@ -219,6 +219,7 @@ const promptIntern = function () {
     })
 }
 
+
 const finishedTeambuild = () => {
     fs.writeFileSync('./dist/index.html', generateMarkdown(groupMembers), "utf-8");
 }
