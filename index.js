@@ -5,8 +5,8 @@ const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
 const path = require('path');
 const groupMembers = [];
-// const generateMarkdown = require('./src/generateMarkdown')
-
+const generateMarkdown = require('./src/generateMarkdown')
+const teamMembers = [];
 
 const promptManager = function () {
     return inquirer.prompt ([
@@ -221,20 +221,18 @@ const promptIntern = function () {
 
 //If the user selects the finish team build option listed they're prompted with the following
 // const finishedTeambuild = function () {
-//     fs.writeFileSync(outputPath, generateSite(groupMembers), "utf-8");
+//         // then((answerData) => {
+//         // generateMarkdown(answerData);
+//     fs.writeFile('index.html', generateMarkdown(answerData));
 
-// }
-promptManager();
-
-
-// const finishedTeambuild = function () {
-//     .then((answerData) => {
-//         generateMarkdown(answerData);
-
-//         fs.writeFileSync('inde.html', generateMarkdown(answerData));
-//     })
-//     .then(() => console.log("What time is it. It's let's make a README time - yeehaw!"))
-//     .catch((err) => console.log(err));
+//     // });
 // };
 
 // finishedTeambuild();
+
+const finishedTeambuild = () => {
+    fs.writeFileSync('index.html', generateMarkdown(groupMembers), "utf-8");
+}
+
+
+promptManager();
