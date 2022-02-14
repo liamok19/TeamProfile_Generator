@@ -4,7 +4,7 @@ const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
 
-const path = require('path');
+// const path = require('path');
 
 const groupMembers = [];
 // const teamMembers = [];
@@ -12,7 +12,7 @@ const groupMembers = [];
 // link to page creation
 const generateMarkdown = require('./src/generateMarkdown')
 
-
+//function prompting for information on the manager. Validation addition so the value must be added into the inquirer.prompt window
 const promptManager = function () {
     return inquirer.prompt ([
         {
@@ -74,9 +74,10 @@ const promptManager = function () {
         prompList();
     })
 }
-
+//prompting after the manager questions. The user can then add more team members to the board. 
 const prompList = () => {
     return inquirer.prompt ([
+        //list value so the user can choose between what to add before hitting enter. 
         {
             type: 'list',
             name: 'list',
@@ -87,13 +88,13 @@ const prompList = () => {
         .then(userChoice => {
             switch (userChoice.list){
                 case 'Include team member: Engineer': 
-                promptEngineer();
+                promptEngineer(); //user is directed to this function if they entered.
                 break
                 case 'Include team member: Intern':
-                promptIntern();
+                promptIntern(); //user is directed to this function if they entered.
                 break
                 case 'Finished team build - select here':
-                finishedTeambuild();
+                finishedTeambuild(); //user is directed to this function if they entered to finish the team.
             } 
         })
 }
@@ -224,7 +225,7 @@ const promptIntern = function () {
     })
 }
 
-
+//writefule is outputted to the following directed. It's pulling in from the required generate Markdown and the results of the group memebers from above. 
 const finishedTeambuild = () => {
     fs.writeFileSync('./dist/index.html', generateMarkdown(groupMembers), "utf-8");
 }

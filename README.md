@@ -4,7 +4,7 @@
 
 ## Table of contents
 - [Description](#description)
-- [Installation](#installation)
+- [Strategy](#strategy)
 - [Directory Structure](#structure)
 - [Usage](#usage)
 - [License](#license)
@@ -16,7 +16,7 @@
 # What is the app for?
 To build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable. I'll need to write a unit test for every part of your code and ensure that it passes each test.
 
-## Installation 
+## Strategy 
 | Steps | Instructions | 
 | ------------- |:-------------:| 
 | Installation Requirements | npm i inquirer - Completed |
@@ -59,11 +59,9 @@ This project is available under the MIT license. Visit [License: MIT](https://op
 ## Contribute
 To contribute to Team Profile Generator, clone this repo locally and commit your code on a separate branch.
 
-## Tests
-
 
 ## Questions
 
 
 Git profile: https://github.com/liamok19
-Email: na
+Email: liamokane19@gmail.com

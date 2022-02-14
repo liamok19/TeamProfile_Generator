@@ -21,10 +21,11 @@ body{
 .employeecontainer{
     display: flex;
     flex-direction: row;
+    align-content: center;
 }
 
 .teamcard {
-    margin: 5px;
+    margin: 0px 30px;
 }
 .card-header{
     text-align: center;

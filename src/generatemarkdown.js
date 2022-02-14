@@ -5,9 +5,10 @@
 // const employee = require("../lib/Employee")
 
 module.exports = results => {
-console.log(results);
+// console.log(results);
 
 return `
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,44 +30,59 @@ return `
         <h1 class="headerbar"><strong> My Team <strong></h1>
     </header>
     <div class="employeecontainer">
+        <div class="teamcard" style="width: 10rem;"></div>
         <div class="teamcard" style="width: 18rem;">
-            <div class="card-header">   
-                ${results[0].name} <br/>
+            <div  class="card-header">   
+                <h2 id ="name-style">${results[0].name} </h2> <br/>
                 <i class="fas fa-mug-hot"></i>Manager
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${results[0].id}</li>
-                <li class="list-group-item">Email Address: <span id="email"><a href="mailto:${results[0].email}">${results[0].email}</a></span></li>
+                <li id="text-space" class="list-group-item">Email Address: 
+                    <span id="email">
+                        <a class="email-wrap" href="mailto:${results[0].email}">${results[0].email}</a>
+                    </span>
+                </li>
                 <li class="list-group-item">Office Number: ${results[0].officeNumber}</li>
             </ul>
         </div>
         <br>
         <div class="teamcard" style="width: 18rem;">
             <div class="card-header">
-                ${results[1].name} <br/>
+                <h2 id ="name-style">${results[1].name}</h2> <br/>
                 <i class="fas fa-glasses"></i>Engineer
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${results[1].id}</li>
-                <li class="list-group-item">Email Address: <span id="email"><a href="mailto:${results[1].email}">${results[1].email}</a></span></li>
-                <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${results[1].githubUsername}">${results[1].githubUsername}</a></li>
+                <li id="text-space" class="list-group-item">Email Address: 
+                    <span id="email">
+                        <a href="mailto:${results[1].email}">${results[1].email}</a>
+                    </span>
+                </li>
+                <li class="list-group-item">Github Username: <a  class="email-wrap" target="_blank" href="https://github.com/${results[1].githubUsername}">${results[1].githubUsername}</a></li>
             </ul>
         </div>
         <br>
         <div class="teamcard" style="width: 18rem;">
             <div class="card-header">
-                ${results[2].name} <br/>
+                <h2 id ="name-style" >${results[2].name}</h2> <br/>
                 <i class="fas fa-user-graduate"></i>Intern
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${results[2].id}</li>
-                <li class="list-group-item">Email Address: <span id="email"><a href="mailto:${results[2].email}">${results[2].email}</a></span></li>
+                <li class="list-group-item">ID:  ${results[2].id}</li>
+                <li id="text-space" class="list-group-item">Email Address: 
+                    <span id="email">
+                        <a  class="email-wrap" href="mailto:${results[2].email}">${results[2].email}</a>
+                    </span>
+                </li>
                 <li class="list-group-item">School: ${results[2].school}</li>
             </ul>
         </div>
+        <div class="teamcard" style="width: 10rem;"></div>
     </div>
 </body>
 </html>
+
 `
 };
 
