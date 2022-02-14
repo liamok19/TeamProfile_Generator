@@ -51,7 +51,7 @@ To build a Node.js command-line application that takes in information about empl
 
 ## Final Look
 # Usage
-<img src='assets/images/' alt="final-look" >
+<img src='./dist/images/liamO_team_profile_generator.gif' alt="liamO_team_profile_generator" >
 
 ## License
 This project is available under the MIT license. Visit [License: MIT](https://opensource.org/licenses/MIT) for full license text
