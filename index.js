@@ -3,10 +3,15 @@ const fs = require('fs');
 const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
+
 const path = require('path');
+
 const groupMembers = [];
+// const teamMembers = [];
+
+// link to page creation
 const generateMarkdown = require('./src/generateMarkdown')
-const teamMembers = [];
+
 
 const promptManager = function () {
     return inquirer.prompt ([

@@ -29,4 +29,18 @@ body{
 .card-header{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+/* adding in extra style to the namem title for each card. Color */
+#name-style {
+    color: rgb(28, 119, 119); 
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#text-space{
+    background-color: antiquewhite;
+}
+.email-wrap {
+    word-wrap: break-word;
 }

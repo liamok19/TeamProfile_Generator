@@ -24,14 +24,14 @@ To build a Node.js command-line application that takes in information about empl
 | The applicaton should include Jest and Inquirer | Completed   |
 | Refer to directory structure below | Completed  |
 | Describe 'it' tests required for the following, Employee, Manager, Intern and Engineer | Completed |
-| Create a prompt window for team members/information. This then updates the html | Not yet started |
-| Apply mail:to to the email link. | Not yet started |
-| Click function to Github link, directing you to the github Page | Not yet started |
-| Prompt window requirs you to enter team managers name, employee ID, email address, and office number | Not yet started |
-| When prompted with team manager information, then i am presented with a menu with the option to add an engineer or an intern or to finish building my team | Not yet started |
-| Engineer Selection:  I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu | Not yet started |
-| Intern Selection:  I am prompted to enter the engineer’s name, ID, email, and school, and I am taken back to the menu | Not yet started |
-| Once completing the team build then i exit the application, and the HTML is generate | Not Yet started | 
+| Create a prompt window for team members/information. This then updates the html | Completed |
+| Apply mail:to to the email link. | Completed |
+| Click function to Github link, directing you to the github Page | Completed |
+| Prompt window requires you to enter team managers name, employee ID, email address, and office number | Completed |
+| When prompted with team manager information, then i am presented with a menu with the option to add an engineer or an intern or to finish building my team | Completed |
+| Engineer Selection:  I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu | Completed |
+| Intern Selection:  I am prompted to enter the engineer’s name, ID, email, and school, and I am taken back to the menu | Completed |
+| Once completing the team build then i exit the application, and the HTML is generate | Completed | 
 
 ## Directory Structure
 ```md
