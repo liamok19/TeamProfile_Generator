@@ -1,13 +1,20 @@
+/* Table Contents
+1. HTML root Properties 
+2 (a). Header Properties
+3 (a). Body Properties
+3 (b). Body Propertes additional styling, animation
+
+
+/* 1. HTML root Properties  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
-body{
-    background-color: rgba(155, 163, 170, 0.295);
 
-}
+/* 2 (a). Header Properties */
 .headerbar{
     padding: 25px; 
     margin: 5%;
@@ -18,6 +25,13 @@ body{
 
 
 }
+
+/* 3 (a). Body Properties */
+body{
+    background-color: rgba(155, 163, 170, 0.295);
+
+}
+
 .employeecontainer{
     display: flex;
     flex-direction: row;
@@ -32,6 +46,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
 }
+
+/* 3 (b). Body Propertes additional styling, animation */
+
 /* adding in extra style to the namem title for each card. Color */
 #name-style {
     color: rgb(28, 119, 119); 
